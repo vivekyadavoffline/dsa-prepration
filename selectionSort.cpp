@@ -21,9 +21,9 @@ void selectionSort(vector<int> &arr)
 
 int main()
 {
-    vector<int> arr = {3, 4, 6, 2, 1, 5, 9, 8};
+    vector<int> arr = {3, 4, 6, 2, 1, 5, 9, 8};                                                                     
 
-    selectionSort(arr);
+    selectionSort(arr);     
 
     for (int x : arr)
     {
