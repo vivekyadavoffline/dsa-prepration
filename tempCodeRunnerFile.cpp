@@ -1,9 +1,17 @@
- // for(int k = 1; k<= n -i - 1; k++ ){
-    //     cout<<" ";
-    // }
-    //   for(int m = 1; m<= n -i - 1; m++ ){
-    //     cout<<" ";
-    // }
-    
-    //  for( int l = 0 ; l <= i ; l++){
-    //     cout<<"*";}
+ int i = nums.size() - 2;
+
+        while (i >= 0 && nums[i] >= nums[i + 1]) {
+            i--;
+        }
+
+        if (i >= 0) {
+            int j = nums.size() - 1;
+
+            while (nums[j] <= nums[i]) {
+                j--;
+            }
+
+            swap(nums[i], nums[j]);
+        }
+
+        reverse(nums.begin() + i + 1, nums.end());
