@@ -13,7 +13,7 @@ int main() {
         isPrime = false;
     }
 
-    for (int i = 2; i <= n - 1; i++) {
+    for (int i = 2; i <= n - 1; i++) { //////loop
         if (n % i == 0) {
             isPrime = false;
             break;
